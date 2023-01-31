@@ -1,0 +1,8 @@
+<h2>Favorite Contacts</h2>
+<div class="contacts-menu">
+    <a *ngFor="let contact of contacts"
+    routerLink="/contact/{{contact.id}}">
+        {{contact.name}}
+    </a>
+</div>
+<app-contact-search></app-contact-search>
